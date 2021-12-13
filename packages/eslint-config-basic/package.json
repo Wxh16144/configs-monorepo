@@ -1,0 +1,45 @@
+{
+  "name": "@wuxh/eslint-config-basic",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxh16144/configs-monorepo.git",
+    "directory": "packages/eslint-config-basic"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "wuxh <wxh1220@gmail.com> (https://github.com/wxh16144)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxh16144/configs-monorepo/issues"
+  },
+  "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
+  "peerDependencies": {
+    "eslint": ">=7.10.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-unicorn": "^39.0.0",
+    "eslint-plugin-yml": "^0.12.0",
+    "jsonc-eslint-parser": "^2.0.4",
+    "yaml-eslint-parser": "^0.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

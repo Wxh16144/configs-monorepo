@@ -1,0 +1,33 @@
+{
+  "name": "@wuxh/eslint-config",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxh16144/configs-monorepo.git",
+    "directory": "packages/eslint-config"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "wuxh <wxh1220@gmail.com> (https://github.com/wxh16144)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxh16144/configs-monorepo/issues"
+  },
+  "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
+  "dependencies": {
+    "@wuxh/eslint-config-react": "^0.0.1",
+    "@wuxh/eslint-config-vue": "^0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@wuxh/configs-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.json,.vue --fix .",
+    "commit": "commit",
+    "preinstall": "npx only-allow pnpm && husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxh16144/configs-monorepo.git"
+  },
+  "keywords": [
+    "config"
+  ],
+  "author": "wuxh <wxh1220@gmail.com> (https://github.com/wxh16144)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxh16144/configs-monorepo/issues"
+  },
+  "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
+  "dependencies": {
+    "@wuxh/eslint-config": "*",
+    "typescript": "^4.5.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@wuxh/commitlint-config": "^0.0.1",
+    "@wuxh/commitzen-config": "0.0.1",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.4.1",
+    "husky": "^7.0.0",
+    "lerna": "^4.0.0"
+  },
+  "config": {
+    "cz-customizable": {
+      "config": "node_modules/@wuxh/commitzen-config"
+    }
+  }
+}

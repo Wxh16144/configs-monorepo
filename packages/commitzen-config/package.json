@@ -1,0 +1,37 @@
+{
+  "name": "@wuxh/commitzen-config",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "commit": "cli.js"
+  },
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxh16144/configs-monorepo.git",
+    "directory": "packages/commitzen-config"
+  },
+  "keywords": [
+    "commitzen-config"
+  ],
+  "author": "wuxh <wxh1220@gmail.com> (https://github.com/wxh16144)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxh16144/configs-monorepo/issues"
+  },
+  "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
+  "peerDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.3.0"
+  },
+  "devDependencies": {
+    "@wuxh/eslint-config-basic": "^0.0.1",
+    "eslint": "^8.4.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
