@@ -3,7 +3,5 @@
 个性化配置文件
 
 | package | version | downloads | size |
-| --- | --- | --- | --- |
-{{each list}}
-| [{{ $value.name }}](https://github.com/Wxh16144/configs-monorepo/tree/main/{{$value.repository.directory}}) | [![{{ $value.name }}](https://flat.badgen.net/npm/v/{{ $value.name }})](https://npmjs.org/package/{{ $value.name }}) | [![downloads](https://flat.badgen.net/npm/dm/{{ $value.name }})](https://npmjs.org/package/{{ $value.name }}) | [![minziped size](https://flat.badgen.net/bundlephobia/minzip/{{ $value.name }})](https://bundlephobia.com/result?p={{ $value.name }}) [![install size](https://flat.badgen.net/packagephobia/install/{{ $value.name }})](https://packagephobia.now.sh/result?p={{ $value.name }}) |
-{{/each}}
+| --- | --- | --- | --- |{{each list}}
+| [{{ $value.name }}](https://github.com/Wxh16144/configs-monorepo/tree/main/{{$value.repository.directory}}) | [![{{ $value.name }}](https://flat.badgen.net/npm/v/{{ $value.name }})](https://npmjs.org/package/{{ $value.name }}) | [![downloads](https://flat.badgen.net/npm/dm/{{ $value.name }})](https://npmjs.org/package/{{ $value.name }}) | [![minziped size](https://flat.badgen.net/bundlephobia/minzip/{{ $value.name }})](https://bundlephobia.com/result?p={{ $value.name }}) [![install size](https://flat.badgen.net/packagephobia/install/{{ $value.name }})](https://packagephobia.now.sh/result?p={{ $value.name }}) |{{/each}}

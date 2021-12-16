@@ -1,11 +1,9 @@
 {
   "$docs": "https://www.lernajs.cn/",
-  "packages": [
-    "packages/*"
-  ],
-  "npmClient":"pnpm",
+  "packages": ["packages/*"],
+  "npmClient": "pnpm",
   "command": {
-    "publish": {
+    "version": {
       "message": "chore(release): publish %s [CI SKIP]"
     }
   },
