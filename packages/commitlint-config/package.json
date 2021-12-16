@@ -1,6 +1,6 @@
 {
   "name": "@wuxh/commitlint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --config=index.js"
@@ -21,10 +21,10 @@
   "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
   "dependencies": {
     "@commitlint/config-conventional": "^15.0.0",
-    "@wuxh/commitzen-config": "^0.0.1"
+    "@wuxh/commitzen-config": "^0.0.2"
   },
   "devDependencies": {
-    "@wuxh/eslint-config-basic": "^0.0.1",
+    "@wuxh/eslint-config-basic": "^0.0.2",
     "eslint": "^8.4.1"
   },
   "publishConfig": {
