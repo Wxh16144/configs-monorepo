@@ -28,9 +28,12 @@
     "@commitlint/cli": "^15.0.0",
     "@wuxh/commitlint-config": "^0.0.1",
     "@wuxh/commitzen-config": "0.0.1",
+    "art-template": "^4.13.2",
     "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
     "eslint": "^8.4.1",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.2.0",
     "husky": "^7.0.0",
     "lerna": "^4.0.0"
   },

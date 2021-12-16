@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "bin": {
-    "commit": "cli.js"
+    "git-commit": "cli.js"
   },
   "scripts": {
     "lint": "eslint . --config=index.js"
