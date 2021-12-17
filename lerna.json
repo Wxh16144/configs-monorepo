@@ -5,8 +5,8 @@
   "command": {
     "publish": {
       "ignoreChanges": [
-        ".gitignore", 
-        "*.log", 
+        ".gitignore",
+        "*.log",
         "*.md"
       ]
     },
