@@ -1,12 +1,12 @@
 {
   "name": "@wuxh/commitzen-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "bin": {
     "git-commit": "cli.js"
   },
   "scripts": {
-    "lint": "eslint . --config=index.js"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "cz-customizable": "^6.3.0"
   },
   "devDependencies": {
-    "@wuxh/eslint-config-basic": "^0.0.2",
+    "@wuxh/eslint-config-basic": "^0.0.3",
     "eslint": "^8.4.1"
   },
   "publishConfig": {

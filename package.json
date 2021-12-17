@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.json,.vue .",
+    "eslint": "eslint --ext .js,.json .",
+    "eslint:fix": "eslint --ext .js,.json --fix .",
     "release": "lerna publish --conventional-commits",
     "preinstall": "npx only-allow pnpm && husky install"
   },
@@ -20,6 +21,12 @@
     "url": "https://github.com/wxh16144/configs-monorepo/issues"
   },
   "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
+  "lint-staged": {
+    "*.{js,json}": [
+      "pnpm run eslint",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@wuxh/eslint-config": "*",
     "typescript": "^4.5.3"
@@ -35,7 +42,8 @@
     "fs-extra": "^10.0.0",
     "glob": "^7.2.0",
     "husky": "^7.0.0",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.2"
   },
   "config": {
     "cz-customizable": {

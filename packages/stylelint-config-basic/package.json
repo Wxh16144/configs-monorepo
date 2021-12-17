@@ -1,17 +1,17 @@
 {
-  "name": "@wuxh/eslint-config",
+  "name": "@wuxh/stylelint-config-basic",
   "version": "0.0.3",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --config=index.js"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wxh16144/configs-monorepo.git",
-    "directory": "packages/eslint-config"
+    "directory": "packages/stylelint-config-basic"
   },
   "keywords": [
-    "eslint-config"
+    "stylelint-config"
   ],
   "author": "wuxh <wxh1220@gmail.com> (https://github.com/wxh16144)",
   "license": "MIT",
@@ -19,11 +19,19 @@
     "url": "https://github.com/wxh16144/configs-monorepo/issues"
   },
   "homepage": "https://github.com/wxh16144/configs-monorepo#readme",
+  "peerDependencies": {
+    "stylelint": "^14.1.0"
+  },
   "dependencies": {
-    "@wuxh/eslint-config-react": "^0.0.3",
-    "@wuxh/eslint-config-vue": "^0.0.3"
+    "stylelint-config-css-modules": "^2.3.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-plugin-stylus": "^0.13.1"
   },
   "devDependencies": {
+    "@wuxh/eslint-config-basic": "^0.0.3",
     "eslint": "^8.4.1"
   },
   "publishConfig": {
