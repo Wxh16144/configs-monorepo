@@ -3,6 +3,13 @@
   "packages": ["packages/*"],
   "npmClient": "pnpm",
   "command": {
+    "publish": {
+      "ignoreChanges": [
+        ".gitignore", 
+        "*.log", 
+        "*.md"
+      ]
+    },
     "version": {
       "message": "chore(release): publish %s [CI SKIP]"
     }
