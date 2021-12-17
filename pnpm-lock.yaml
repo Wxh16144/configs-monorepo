@@ -5,8 +5,8 @@ importers:
   .:
     specifiers:
       '@commitlint/cli': ^15.0.0
-      '@wuxh/commitlint-config': ^0.0.1
-      '@wuxh/commitzen-config': 0.0.1
+      '@wuxh/commitlint-config': '*'
+      '@wuxh/commitzen-config': '*'
       '@wuxh/eslint-config': '*'
       art-template: ^4.13.2
       commitizen: ^4.2.4
@@ -36,8 +36,8 @@ importers:
   packages/commitlint-config:
     specifiers:
       '@commitlint/config-conventional': ^15.0.0
-      '@wuxh/commitzen-config': ^0.0.1
-      '@wuxh/eslint-config-basic': ^0.0.1
+      '@wuxh/commitzen-config': ^0.0.2
+      '@wuxh/eslint-config-basic': ^0.0.2
       eslint: ^8.4.1
     dependencies:
       '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/15.0.0
@@ -48,7 +48,7 @@ importers:
 
   packages/commitzen-config:
     specifiers:
-      '@wuxh/eslint-config-basic': ^0.0.1
+      '@wuxh/eslint-config-basic': ^0.0.2
       eslint: ^8.4.1
     devDependencies:
       '@wuxh/eslint-config-basic': link:../eslint-config-basic
@@ -56,8 +56,8 @@ importers:
 
   packages/eslint-config:
     specifiers:
-      '@wuxh/eslint-config-react': ^0.0.1
-      '@wuxh/eslint-config-vue': ^0.0.1
+      '@wuxh/eslint-config-react': ^0.0.2
+      '@wuxh/eslint-config-vue': ^0.0.2
       eslint: ^8.4.1
     dependencies:
       '@wuxh/eslint-config-react': link:../eslint-config-react
@@ -96,7 +96,7 @@ importers:
 
   packages/eslint-config-react:
     specifiers:
-      '@wuxh/eslint-config-ts': ^0.0.1
+      '@wuxh/eslint-config-ts': ^0.0.2
       eslint: ^8.4.1
       eslint-plugin-react: ^7.27.1
     dependencies:
@@ -109,7 +109,7 @@ importers:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.6.0
       '@typescript-eslint/parser': ^5.6.0
-      '@wuxh/eslint-config-basic': ^0.0.1
+      '@wuxh/eslint-config-basic': ^0.0.2
       eslint: ^8.4.1
     dependencies:
       '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.6.0_0d0cecf582ba45923647a091322795b0
@@ -120,7 +120,7 @@ importers:
 
   packages/eslint-config-vue:
     specifiers:
-      '@wuxh/eslint-config-ts': ^0.0.1
+      '@wuxh/eslint-config-ts': ^0.0.2
       eslint: ^8.4.1
       eslint-plugin-vue: ^8.2.0
     dependencies:
