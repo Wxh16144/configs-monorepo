@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.json,.vue --fix .",
+    "lint": "eslint --ext .js,.json,.vue .",
     "release": "lerna publish --conventional-commits",
     "preinstall": "npx only-allow pnpm && husky install"
   },

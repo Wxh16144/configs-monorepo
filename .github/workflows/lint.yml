@@ -1,0 +1,35 @@
+name: code lint
+
+on:
+  push:
+    branches: 
+      - main
+      - feature/*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+     
+      - name: Install dependencies
+        run: npm config set registry https://registry.npmmirror.com
+      - run: pnpm install
+
+      - name: eslint
+        run: pnpm run lint
