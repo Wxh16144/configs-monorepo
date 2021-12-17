@@ -26,8 +26,8 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
-    "@wuxh/commitlint-config": "^0.0.1",
-    "@wuxh/commitzen-config": "0.0.1",
+    "@wuxh/commitlint-config": "*",
+    "@wuxh/commitzen-config": "*",
     "art-template": "^4.13.2",
     "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
