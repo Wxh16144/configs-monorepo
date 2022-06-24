@@ -1,6 +1,6 @@
 # configs
 
-个性化配置文件
+个性化配置文件, 学习借鉴自 [antfu/eslint-config](https://github.com/antfu/eslint-config)。
 
 | package | version | downloads | size |
 | --- | --- | --- | --- |
